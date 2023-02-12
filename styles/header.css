@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    background-color: black;
+    height: 85px;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    color:white;
+
+}
+.left-section{
+    display: flex;
+    align-items: center;
+
+
+}
+.profile-pic{
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 0;
+    border-radius: 30px;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+  
+}
+.logo-pic{
+    margin-top: 40px;
+    width: 200px;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+
+}
+.insta-logo{
+    width: 60px;
+    margin-bottom: 1px;
+    margin-right: 5px;
+}
