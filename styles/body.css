@@ -2,37 +2,35 @@
 .container{
     
     display: flex;  
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(31, 29, 29);
     flex-direction: row;
     justify-content: space-evenly;
-   
-    height:500px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    margin:0 auto;
 
-    
     width: 100%;
     
     
     top:0;
     left:0;
     right:0;
- 
+    transition: all 0.5s ease 0s;
    
    
    
 }
 
+
 .main-pic{
     
-    margin-left: 10px;
-    margin-right: 10px;
+    
+    text-align: center;
+    color: white;
     object-fit: contain;
-   
     
    
-    
-  
+   
     
   
 }
@@ -51,13 +49,14 @@
 .my-name{
    
     
-    align-content: center;
-    margin-top: 50px;
-    margin-left: 240px;
-    font-size: 30px;
-
+    font-weight: solid;
+    text-align: center;
+    
+    font-size: 40px;
+    background-color: rgb(34, 34, 39);
     color:white;
-   
+    /* border-radius: 100px; */
+    margin: 10px;
         
     
     
@@ -65,27 +64,30 @@
 }
 .top-box{
     flex:1;
-    background-color: rgb(224, 189, 189);
-    width: 100%;
+    background-color: rgb(38, 38, 39);
+    
     flex-direction: column;
     justify-content: space-between;
-     margin-top: 50px;
-    margin-left: 30px;
-    margin-bottom: 50px;
-    
+    padding: 30px;
     border-radius: 20px;
+    margin:3px;
+    
 
 }
 .bottom-box{
     flex:1;
     background-color: rgb(38, 38, 39);
-    width: 100px;
+   
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-right: 30px;
-    margin-left: 10px;
-    margin-bottom: 50px;
+       
+    margin: 3px;
+    /* margin-bottom: 50px; */
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border-radius: 20px;
 }
 .last-box{
     display: flex;
@@ -101,10 +103,138 @@
     
     
 }
-@media (max-width: 800px)
+@media screen and (max-width: 768px)
 {
-    .top-box,.bottom-box,.my-name,.main-pic{
-        flex: 100%;
+    .container{
+        flex-direction: column;
+        
        
+    }
+}
+
+.text-box2{
+   
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    font-style: solid;
+    color: white;
+    
+    
+    
+}
+@media screen and (max-width: 768px) {
+    .text-box2{
+        font-size: 80%;
+        margin: 3px;
+    }
+    
+}
+.p1-fix{
+    flex:1;
+    font-size: 30px;
+    text-size-adjust: auto;
+    background-color: rgb(34, 89, 107);
+    border-radius: 8px;
+    padding: 1%;
+    margin: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+.p2-fix{
+    flex:1;
+    font-size: 30px;
+    text-size-adjust: auto;
+    background-color: rgb(34, 89, 107);
+    border-radius: 8px;
+    padding: 1%;
+    margin: 12px;
+    text-align: center;
+    
+    
+}
+.p3-fix{    
+    flex:1;
+    font-size: 40px;
+    text-size-adjust: auto; 
+    background-color: rgb(34, 34, 39);
+    border-radius: 8px;
+    padding: 1%;
+    margin: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+
+@media screen and (max-width: 768px) {
+    .p1-fix, .p2-fix{
+        font-size: 100%;
+    }
+    
+}
+.leftbox{
+    flex:1;
+    background-color: #1f1d1f;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 3px;
+    
+
+}
+.singlebox{
+    flex:1;
+    background-color: rgb(38, 38, 39);
+    
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 3px;
+    
+    
+
+}
+.rightbox{
+    flex:1;
+    background-color: #1f1d1f;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 3px;
+    
+
+}
+.descriptionbox{
+   align-items: center;
+   text-align: center;
+   color: white;
+   font-size: 30px;
+   text-size-adjust: auto;
+}
+.pic-desc{
+   
+    color:white;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+
+}
+.pic-text{
+    background-color: rgb(38, 38, 39);
+    padding:4%;
+    border-radius: 5px;
+    font-size: 30px;
+    text-size-adjust: auto;
+}
+@media screen and (max-width:700px) {
+    .pic-text,.pic-desc,.descriptionbox{
+        font-size: 100%;
     }
 }

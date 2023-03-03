@@ -23,6 +23,15 @@
 
 
 }
+.textbox-new{
+    
+    font-size: 20px;
+    color: white;
+   
+    
+    
+ 
+}
 .profile-pic{
     width: 60px;
     margin-left: 20px;
@@ -48,3 +57,7 @@
     margin-bottom: 1px;
     margin-right: 5px;
 }
+.insta-logo:hover{
+    opacity:0.5;
+}
+
